@@ -10,9 +10,12 @@ html {
 .links {
 	padding: 1.5em;
 }
+.links > a {
+	padding: 0.4em 0.2em 0 0.2em;
+}
 .links > a > img {
 	max-width: 100%;
-	height: 30px;
+	height: 40px;
 }
 
 .avatar {
