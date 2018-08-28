@@ -1,7 +1,7 @@
 const title = document.querySelector("#title");
 let welcomeString = `Hey there! You Internet People,^Its Velan here :)`;
 
-window.onload = function() {
+function displayText() {
 	let i = 0;
 	window.setInterval(function() {
 		if (welcomeString.charAt(i) == "^") {
@@ -11,4 +11,6 @@ window.onload = function() {
 		title.innerHTML += welcomeString.charAt(i);
 		i++;
 	}, 200);
-};
+}
+
+displayText();
