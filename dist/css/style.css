@@ -10,6 +10,26 @@ html {
 	font-family: "Indie Flower";
 }
 
+/* Title */
+#title::after {
+	content: " |";
+	animation-name: cursor;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(1, 0, 0, 1);
+	animation-duration: 1s;
+	margin-left: 5px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+@keyframes cursor {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
 /* Utility Classes */
 
 .bold {
