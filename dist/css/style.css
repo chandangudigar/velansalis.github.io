@@ -1,5 +1,8 @@
-/* Header Text */
+/* Imports */
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+
+/* Global Classes */
 
 body,
 html {
@@ -7,40 +10,57 @@ html {
 	font-family: "Indie Flower";
 }
 
+/* Utility Classes */
+
 .bold {
 	font-weight: bold;
 }
-
-.links {
-	padding: 1.5em;
-}
-.links > a {
-	padding: 0.4em 0.2em 0 0.2em;
-}
-.links > a > img {
-	max-width: 100%;
-	height: 35px;
-	opacity: 0.7;
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-	filter: grayscale(100%);
-}
-
-.avatar {
-	border-radius: 50%;
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
-	-webkit-animation: pulse 1.5s infinite;
-}
-
 .header {
 	min-height: 100vh;
 	text-align: center;
 }
+
+/* Social Links */
+
+.links {
+	padding: 1em;
+}
+.links > a {
+	text-decoration: none;
+}
+.links > a > i {
+	color: rgba(31, 30, 30, 0.933);
+	padding: 10px 10px 0px 1px;
+	transition: all 0.2s;
+}
+
+/* Referencing individual Icons */
+
+.links > a > i.fa-instagram:hover {
+	color: rgb(202, 39, 80);
+}
+.links > a > i.fa-github-square:hover {
+	color: #000000;
+}
+.links > a > i.fa-linkedin:hover {
+	color: #4875b4;
+}
+.links > a > i.fa-twitter-square:hover {
+	color: #2799be;
+}
+.links > a > i.fa-stack-overflow:hover {
+	color: #e28c1b;
+}
+/* 
+	Container is a div that contains other element
+	It is set to 90% of the total width
+*/
+
 .container {
 	margin: 0 auto;
 	max-width: 1280px;
 	width: 90%;
 }
-
 @media only screen and (min-width: 601px) {
 	.container {
 		width: 85%;
@@ -52,16 +72,18 @@ html {
 		width: 70%;
 	}
 }
+
+/* Card Panel is the Card type Materialized Holder for elemets */
+
 .card-panel {
-	-webkit-transition: -webkit-box-shadow 0.25s;
-	transition: -webkit-box-shadow 0.25s;
-	transition: box-shadow 0.25s;
-	transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
 	padding: 24px;
 	margin: 0.5rem 0 1rem 0;
 	border-radius: 2px;
 	background-color: #fff;
 }
+
+/* Vertical Align Code */
+
 .valign {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -71,6 +93,14 @@ html {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+
+/* Pulse Effect for the Avatar */
+
+.avatar {
+	border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+	-webkit-animation: pulse 1.5s infinite;
 }
 
 @-webkit-keyframes pulse {
