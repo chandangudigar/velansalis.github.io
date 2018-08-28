@@ -10,7 +10,7 @@ function displayText() {
 		}
 		title.innerHTML += welcomeString.charAt(i);
 		i++;
-	}, 200);
+	}, 175);
 }
 
 displayText();
