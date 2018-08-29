@@ -1,5 +1,5 @@
 const title = document.querySelector("#title");
-let welcomeString = `Hey there! You Internet People,^Its Velan here :)`;
+let welcomeString = `Hey there! You Netizens,^Its Velan here :)`;
 
 function displayText() {
 	let i = 0;
