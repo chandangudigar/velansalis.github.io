@@ -5,7 +5,7 @@ const newText = document.querySelector("#newText");
 
 // Primary Text
 function displayText() {
-	let welcomeString = `Hey there! You Netizens,^Its Velan here :)`,
+	let welcomeString = `Hey there!^ You People on the Internet,^Its Velan here :)`,
 		i = 0;
 	window.setInterval(function() {
 		if (welcomeString.charAt(i) == "^") {
